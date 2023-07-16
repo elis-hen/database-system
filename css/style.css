@@ -1,0 +1,362 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #353535;
+}
+
+.div_container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #dbdbdb;
+    box-shadow: 0px 0px 20px rgb(165, 165, 165);
+    max-width: 900px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+h1 {
+    width: 100%;
+    text-shadow: 0em 0em 0.2em #f5e9a5;
+}
+
+.form_inserir {
+    display: flex;
+    width: 100%;
+    flex-direction: column wrap;
+}
+
+.form_deletar {
+    display: flex;
+    width: 100%;
+    flex-direction: column wrap;
+}
+
+.form_editar {
+    display: flex;
+    width: 100%;
+    flex-direction: column wrap;
+}
+
+.form_buscar {
+    display: flex;
+    width: 100%;
+    flex-direction: column wrap;
+}
+
+.oculto {
+    display: none;
+}
+
+.div_title {
+    width: 12%;
+    text-align: center;
+    align-self: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+@media (max-width: 750px) {
+    .div_title {
+        display: none;
+    }
+
+}
+
+.div_deletar {
+    display: flex;
+    background-color: #f4f4f4;
+    border: 2px solid #ffffff;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.div_deletar_txt {
+    width: 100%;
+    text-align: center;
+}
+
+.div_input {
+    width: 75%;
+}
+
+input {
+    position: relative;
+    background-color: #f4f4f4;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.div_button {
+    width: 13%;
+}
+
+@media (max-width: 750px) {
+    .div_button {
+        width: 25%;
+    }
+
+}
+
+.btn_geral {
+    width: 100%;
+    padding: 10px;
+    background-color: #c2c2c2;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.div-col {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 1px;
+}
+
+
+.div-btn-filtro {
+    display: flexbox;
+}
+
+.btn-up {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../img/up.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(25%);
+    border: 1px solid rgba(8, 8, 8, 0);
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-down {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../img/down.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(25%);
+    border: 1px solid rgba(8, 8, 8, 0);
+
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.button_editar {
+    display: flexbox;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../img/edit.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(25%);
+    border: 1px solid rgba(8, 8, 8, 0);
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.button_adel {
+    display: flexbox;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../img/delete.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(25%);
+    border: 1px solid rgba(8, 8, 8, 0);
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-down:hover,
+.btn-up:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.button_editar:hover,
+.button_adel:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.div_filtro {
+    display: flexbox;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.div-action {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+.btn-main {
+    padding: 10px;
+    background-color: #edda6b;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    width: 50%;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div_tabela {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+th {
+    background-color: #f5e9a5;
+    color: black;
+    border: 2px solid white;
+    /* padding: 12px; */
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    text-align: left;
+}
+
+.col-id {
+    display: flexbox;
+    width: 80px;
+    height: 45px;
+}
+
+.col-nome {
+    display: flexbox;
+    width: 320px;
+    height: 45px;
+}
+
+.col-email {
+    display: flexbox;
+    width: 200px;
+    height: 45px;
+}
+
+.col-data {
+    display: flexbox;
+    width: 180px;
+    height: 45px;
+}
+
+.col-acao {
+    display: flexbox;
+    width: 80px;
+    height: 45px;
+}
+
+tr:hover {
+    background: #454545;
+    color: white;
+}
+
+tr:hover .button_editar {
+    filter: invert(100%);
+}
+
+tr:hover .button_adel {
+    filter: invert(100%);
+}
+
+.img_action:hover {
+    filter: invert(100%);
+}
+
+#div_nenhum {
+    display: flexbox;
+    border: 2px solid lightgray;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.msg_erro {
+    position: relative;
+    padding: 10px;
+    background-color: #af6d6d;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.msg_sucesso {
+    position: relative;
+    padding: 10px;
+    background-color: #a6ba87;
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-main:hover,
+.btn_geral:hover,
+.msg_sucesso:hover,
+.msg_erro:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
