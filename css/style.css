@@ -253,6 +253,7 @@ input {
 }
 
 table {
+    table-layout: fixed;
     position: relative;
     border-collapse: collapse;
     background-color: #f4f4f4;
@@ -263,44 +264,47 @@ th {
     background-color: #f5e9a5;
     color: black;
     border: 2px solid white;
-    /* padding: 12px; */
 }
 
 td {
     padding: 5px;
-    text-align: center;
     border: 2px solid white;
     text-align: left;
 }
 
-.col-id {
+.col-id,
+.col-acao {
     display: flexbox;
-    width: 80px;
+    width: 75px;
     height: 45px;
 }
 
 .col-nome {
     display: flexbox;
-    width: 320px;
     height: 45px;
 }
 
-.col-email {
+.td-email {
     display: flexbox;
-    width: 200px;
-    height: 45px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .col-data {
     display: flexbox;
-    width: 180px;
+    width: 170px;
     height: 45px;
 }
 
-.col-acao {
-    display: flexbox;
-    width: 80px;
-    height: 45px;
+@media (max-width: 750px) {
+
+    .col-data,
+    .td-data {
+        display: none;
+    }
+
 }
 
 tr:hover {

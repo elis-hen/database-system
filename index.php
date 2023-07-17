@@ -227,8 +227,8 @@ require('db/conexao.php');
                             <tr>
                                 <td>".$valor['id']."</td>
                                 <td>".$valor['nome']."</td>
-                                <td>".$valor['email']."</td>
-                                <td>".$valor['data_cadastro']."</td>
+                                <td class='td-email'>".$valor['email']."</td>
+                                <td class='td-data'>".$valor['data_cadastro']."</td>
                                 <td><div class='div-action'><a class='button_editar' title='Edit Client' data-id='".$valor['id']."' data-nome='".$valor['nome']."'data-email='".$valor['email']."'></a><a class='button_adel' title='Delete Client' data-id='".$valor['id']."' data-nome='".$valor['nome']."'data-email='".$valor['email']."'></a></div></td>
                                 
                             </tr>
