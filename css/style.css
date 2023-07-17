@@ -307,6 +307,15 @@ td {
 
 }
 
+@media (max-width: 450px) {
+
+    .col-email,
+    .td-email {
+        display: none;
+    }
+
+}
+
 tr:hover {
     background: #454545;
     color: white;
