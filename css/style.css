@@ -253,7 +253,7 @@ input {
 }
 
 table {
-    table-layout: fixed;
+    /* table-layout: fixed; */
     position: relative;
     border-collapse: collapse;
     background-color: #f4f4f4;
@@ -264,6 +264,7 @@ th {
     background-color: #f5e9a5;
     color: black;
     border: 2px solid white;
+
 }
 
 td {
@@ -281,21 +282,36 @@ td {
 
 .col-nome {
     display: flexbox;
+    position: relative;
     height: 45px;
+}
+
+.td-nome {
+    display: flexbox;
+    position: relative;
+    min-width: 100px;
+    max-width: 300px;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    resize: horizontal;
 }
 
 .td-email {
     display: flexbox;
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     text-overflow: ellipsis;
+    /* resize: horizontal; */
 }
 
 .col-data {
     display: flexbox;
-    width: 170px;
+    /* width: 100px; */
     height: 45px;
+    min-width: 90px;
+    width: 90px;
 }
 
 @media (max-width: 750px) {
