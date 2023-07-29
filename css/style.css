@@ -293,7 +293,6 @@ td {
     display: flexbox;
     position: relative;
     min-width: 100px;
-    max-width: 300px;
     overflow: hidden;
     /* white-space: nowrap; */
     text-overflow: ellipsis;
